@@ -7,17 +7,11 @@ import jakarta.persistence.Table
 import java.util.*
 
 @Entity
-@Table(name="users")
-data class User(
+@Table(name = "payments")
+data class Payment(
 
     @Id
     val id: String,
-
-    @Column(name = "email")
-    val email: String,
-
-    @Column(name = "password")
-    val password: String,
 
     @Column(name = "created_at")
     var createdAt: Date,
